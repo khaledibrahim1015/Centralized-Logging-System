@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/Centralized-Logging-System/LoggingQueuePublisher/bin/Debug/net7.0
+/Centralized-Logging-System/LoggingQueuePublisher/obj
