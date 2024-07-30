@@ -12,6 +12,6 @@ This project implements a centralized logging system using .NET Core, Serilog, R
 
 
 Prerequisites
-.NET Core 3.1 or later
-RabbitMQ server
-Elasticsearch server
+- .NET Core 3.1 or later
+- RabbitMQ server
+- Elasticsearch server
