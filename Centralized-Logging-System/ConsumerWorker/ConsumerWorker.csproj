@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ConsumerWorker-b066d7af-c1cb-4a19-bb1f-1b7ec82aa58c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+	  <PackageReference Include="NEST" Version="7.17.4" />
+	  <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+	  <PackageReference Include="Serilog.Enrichers.Environment" Version="3.0.0" />
+	  <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.2" />
+	  <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+	  <PackageReference Include="Serilog.Exceptions" Version="7.0.0" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+	  <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+
+  </ItemGroup>
+</Project>
