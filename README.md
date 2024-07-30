@@ -5,17 +5,17 @@ This project consists of two main components: the Publisher and the Consumer. Th
 # Publisher:
  Configures Serilog in .NET Core applications to send logs to RabbitMQ queues.
 ## Features Implemented
-  1- Configure Serilog: Setting up Serilog for logging.
-  2- Create RabbitMQ Queue: Establishing queues in RabbitMQ.
-  3- Send Logs to RabbitMQ: Sending logs to the RabbitMQ queue.
+  1. Configure Serilog: Setting up Serilog for logging.
+  2. Create RabbitMQ Queue: Establishing queues in RabbitMQ.
+  3. Send Logs to RabbitMQ: Sending logs to the RabbitMQ queue.
 
 # Consumer:
 A background service that consumes logs from RabbitMQ queues, writes them to files, and inserts them into Elasticsearch indices.
 ## Features Implemented
- 1- Dynamic Consumer: Dynamically add consumers via the appsettings file.
- 2- Consume Messages: Consume messages from RabbitMQ queues.
- 3- Create Log Files: Create log files based on consumed messages.
- 4- Insert into Elastic Index: Insert logs into Elastic index.
+ 1. Dynamic Consumer: Dynamically add consumers via the appsettings file.
+ 2. Consume Messages: Consume messages from RabbitMQ queues.
+ 3. Create Log Files: Create log files based on consumed messages.
+ 4. Insert into Elastic Index: Insert logs into Elastic index.
 
 ## Architecture
 ![impl3](https://github.com/khaledibrahim1015/Queuing-Logger/assets/91853322/cb5d5e98-e68f-4e90-9ba0-8b007f54cd14)
