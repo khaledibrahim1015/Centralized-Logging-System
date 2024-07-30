@@ -15,3 +15,12 @@ Prerequisites
 - .NET Core 3.1 or later
 - RabbitMQ server
 - Elasticsearch server
+
+## Publisher Component
+Installation
+Add the following NuGet packages to your .NET Core application:
+``` 
+dotnet add package Serilog
+dotnet add package Serilog.Sinks.RabbitMQ
+dotnet add package RabbitMQ.Client
+```
