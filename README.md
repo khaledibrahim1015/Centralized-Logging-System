@@ -1,12 +1,21 @@
 # Centralized Logging System
 ## Overview
-This project implements a centralized logging system using .NET Core, Serilog, RabbitMQ, and Elasticsearch Kibbana . It consists of two main components:
+This project consists of two main components: the Publisher and the Consumer. The Publisher is responsible for configuring Serilog, creating queues in RabbitMQ, and sending logs to RabbitMQ queues. The Consumer is a dynamic background service that consumes messages from RabbitMQ queues, creates log files, and inserts them into an Elastic index.
 
 ## Publisher:
  Configures Serilog in .NET Core applications to send logs to RabbitMQ queues.
+Features Implemented
+  1- Configure Serilog: Setting up Serilog for logging.
+  2- Create RabbitMQ Queue: Establishing queues in RabbitMQ.
+  3- Send Logs to RabbitMQ: Sending logs to the RabbitMQ queue.
 
 ## Consumer:
 A background service that consumes logs from RabbitMQ queues, writes them to files, and inserts them into Elasticsearch indices.
+Features Implemented
+ 1- Dynamic Consumer: Dynamically add consumers via the appsettings file.
+ 2- Consume Messages: Consume messages from RabbitMQ queues.
+ 3- Create Log Files: Create log files based on consumed messages.
+ 4- Insert into Elastic Index: Insert logs into Elastic index.
 
 ## Architecture
 ![impl3](https://github.com/khaledibrahim1015/Queuing-Logger/assets/91853322/cb5d5e98-e68f-4e90-9ba0-8b007f54cd14)
@@ -18,14 +27,15 @@ Prerequisites
 - Elasticsearch server
 
 ### Publisher Component
-Installation
+How to Use
+### 1- Installation
 Add the following NuGet packages to your .NET Core application:
 ``` 
 dotnet add package Serilog
 dotnet add package Serilog.Sinks.RabbitMQ
 dotnet add package RabbitMQ.Client
 ```
-Configuration
+### 2- Configuration
 
 1. Add the following to your appsettings.json:
 ```
