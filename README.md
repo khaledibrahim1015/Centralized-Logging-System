@@ -69,11 +69,15 @@ public class Program
             });
 }
 ```
-This setup uses a custom ConfigurationHelper class to configure Serilog with RabbitMQ. The SetConfigurationLogging method reads RabbitMQ configuration from appsettings.json and sets up Serilog accordingly.
+
+```
+This setup uses a custom ConfigurationHelper class to configure Serilog with RabbitMQ.
+The SetConfigurationLogging method reads RabbitMQ configuration from appsettings.json and sets up Serilog accordingly.
 The useCustomFormat parameter allows for using a custom JSON formatter if set to true. This gives you flexibility in how your logs are formatted before being sent to RabbitMQ.
 By calling ConfigurationHelper.SetConfigurationLogging(true) in Program.cs, you're setting up Serilog with RabbitMQ integration and using a custom JSON formatter.
 This approach provides more control over the Serilog configuration and allows for easier customization of log formatting and enrichment.
 
+```
 
 3- In Startup.cs, add RabbitMQ services:
 Register it in DI CONTAINER 
