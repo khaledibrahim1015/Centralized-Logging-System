@@ -111,6 +111,7 @@ Log.Error("This is an error message");
 ```
 
 ### Consumer Component
+How to Use
 Installation
 Create a new .NET Core console application and add the following NuGet packages:
 
